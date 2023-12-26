@@ -3,6 +3,7 @@ import {
   } from "react-router-dom";
 import MainLayout from "../layout/MainLayout";
 import Home from "../pages/Home/Home";
+import AddNotes from "../pages/AddNotes/AddNotes";
   
   
   const router = createBrowserRouter([
@@ -13,7 +14,11 @@ import Home from "../pages/Home/Home";
         {
             path: '/',
             element: <Home />
-        }
+        },
+        {
+            path: '/add-notes',
+            element: <AddNotes />
+        },
       ]
     },
   ]);
