@@ -4,6 +4,7 @@ const Navbar = () => {
 
     const navItems = <>
         <Link to={'/'}><li><a>Home</a></li></Link>
+        <Link to={'/all-notes'}><li><a>All Notes</a></li></Link>
         <Link to={'/add-notes'}><li><a>Add Notes</a></li></Link>
     </>
 
@@ -20,14 +21,14 @@ const Navbar = () => {
                 </div>
                 <a className="btn btn-ghost text-xl">Note Book</a>
             </div>
-            <div className="navbar-center hidden lg:flex">
+            <div className="navbar-end hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
                     {navItems}
                 </ul>
             </div>
-            <div className="navbar-end">
+            {/* <div className="navbar-end">
                 <a className="btn">Button</a>
-            </div>
+            </div> */}
         </div>
     );
 };

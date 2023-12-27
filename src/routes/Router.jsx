@@ -1,10 +1,11 @@
 import {
     createBrowserRouter
-  } from "react-router-dom";
+} from "react-router-dom";
 import MainLayout from "../layout/MainLayout";
-import Home from "../pages/Home/Home";
 import AddNotes from "../pages/AddNotes/AddNotes";
+import AllNotes from "../pages/AllNotes/AllNotes";
 import EditNotes from "../pages/EditNotes/EditNotes";
+import Home from "../pages/Home/Home";
   
   
   const router = createBrowserRouter([
@@ -15,6 +16,10 @@ import EditNotes from "../pages/EditNotes/EditNotes";
         {
             path: '/',
             element: <Home />
+        },
+        {
+            path: '/all-notes',
+            element: <AllNotes />
         },
         {
             path: '/add-notes',
