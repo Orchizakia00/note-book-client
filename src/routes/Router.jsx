@@ -28,7 +28,7 @@ import Home from "../pages/Home/Home";
         {
             path: '/edit-notes/:id',
             element: <EditNotes />,
-            loader: ({params}) => fetch(`http://localhost:5000/notes/${params.id}`)
+            loader: ({params}) => fetch(`https://note-book-server.vercel.app/notes/${params.id}`)
         },
       ]
     },

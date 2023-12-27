@@ -66,7 +66,7 @@ const AllNotes = () => {
     }
 
     return (
-        <div>
+        <div className="min-h-screen mb-10">
             <div className="dropdown mb-8">
                 <div tabIndex={0} role="button" className="btn m-1">Filter By Months</div>
                 <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
